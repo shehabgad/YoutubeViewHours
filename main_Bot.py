@@ -3,7 +3,7 @@ import threading
 import json
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind((socket.gethostname(), 28000))
+s.bind(("0.0.0.0", 28000))
 
 
 def vpsConnection(so, arr):
